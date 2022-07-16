@@ -54,7 +54,6 @@ class Solution(object):
                     seen.add((x, y))
                     cur_area = 0
                     while(search_stack):
-                        print("hello")
                         old = next
                         next = self.travel(grid, seen, old)
                         # if None we found no more 1:s and need to backtrack
